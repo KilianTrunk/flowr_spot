@@ -1,17 +1,23 @@
-import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/NavBar";
 import Flowers from "./features/flowers/Flowers";
+import RegisterModal from "./features/register/RegisterModal";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import { store } from "./app/store"
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <div style={{ backgroundColor: "#f2f2f2" }}>
-        <Flowers />
-      </div>
-    </div>
+    <Provider store={store}>
+      <BrowserRouter>
+        <NavBar />
+        <RegisterModal />
+        <Routes>
+          <Route index element={<Flowers />} />
+        </Routes>
+      </BrowserRouter>
+    </Provider>
   );
 }
 

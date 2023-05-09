@@ -5,3 +5,126 @@
 .navbar__item {
     margin-right: 2rem;
 }
+
+.navbar__profile-picture {
+    padding-left: 1rem;
+}
+
+.navbar__button {
+    background: linear-gradient(to left, #ECBCB3 0%, #EAA79E 100%) !important;
+    border: none !important;
+    border-radius: 6rem !important;
+    padding: 0.6rem 1.6rem !important;
+}
+
+.navbar__button:hover {
+    background: none !important;
+    background-color: white !important;
+    color: #DF9186 !important;
+}
+
+.register-modal {
+    padding: 0 1.5rem !important;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.register-modal__title {
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
+    text-align: center;
+    margin: 1rem 0 1.7rem 0;
+}
+
+.register-modal__close-button {
+    all: unset !important;
+    min-width: 100% !important;
+    text-align: center !important;
+    margin: 1.9rem 0 1.2rem 0 !important; 
+}
+
+.register-modal__submit-button {
+    width: 100%;
+    padding: 1rem 0 !important;
+    font-weight: 500 !important;
+    background: linear-gradient(to left, #ECBCB3 0%, #EAA79E 100%) !important;
+    border-radius: 0.2rem !important;
+    border: none !important;
+    margin-top: 1rem !important;
+}
+
+.register-modal__submit-button:hover {
+    background: none !important;
+    background-color: white !important;
+    color: #DF9186 !important;
+}
+
+.register-modal__input {
+    margin: 0.5rem 0;
+    border-radius: 0.2rem !important;
+    background-color: #F5F6F7 !important;
+}
+
+.flowers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flowers-container__star {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.flowers-container__card__button {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border: none !important;
+    border-radius: 6rem !important;
+    padding: 0.3rem 1rem !important;
+    font-size: 0.8rem !important;
+}
+
+.flowers-container__card__button:hover {
+    background: linear-gradient(to left, #ECBCB3 0%, #EAA79E 100%) !important;
+}
+
+.user-profile-modal {
+    padding: 3rem !important;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.user-profile-modal__user-data {
+    margin: 3rem 0;
+}
+
+.user-profile-modal__user-data__title {
+    font-size: 0.7rem;
+    color: gray;
+    margin-top: 2rem;
+}
+
+.user-profile-modal__user-name-and-last-name {
+    font-size: 2rem;
+    font-weight: 300 !important;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .flowers-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar__button {
+        width: 10rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        padding: 0.5rem !important;
+    }
+    .navbar__item {
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    .navbar__logo {
+        margin-left: 2rem;
+    }
+}

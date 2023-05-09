@@ -1,9 +1,15 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import flowersReducer from '../features/flowers/flowersSlice'
+import flowersReducer from '../features/flowers/flowersSlice';
+import registerReducer from '../features/register/registerSlice';
+import loginReducer from '../features/login/loginSlice';
+import userReducer from '../features/user/userSlice';
 
 export const store = configureStore({
   reducer: {
     flowers: flowersReducer,
+    register: registerReducer,
+    login: loginReducer,
+    user: userReducer
   },
 });
 
